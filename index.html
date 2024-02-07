@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viagem Explora</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <div class="container">
+        <input type="checkbox" id="menu" class="container__botao" />
+        <label for="menu" class="container__rotulo">
+          <span class="cabecalho__menu-hamburguer container__imagem"></span>
+        </label>
+        <ul class="lista-menu">
+          <li class="lista-menu__titulo">Explorar Destinos</li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Aventura</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Cultura</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Praias</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Culinária</a>
+          </li>
+        </ul>
+        <img
+          src="img/earth-americas-solid.svg"
+          alt="Planeta Terra"
+          class="container__imagem"
+        />
+        <h1 class="container__titulo">
+          <b class="container__titulo--negrito">Viagem</b>Explora
+        </h1>
+      </div>
+
+      <ul class="opcoes">
+        <input type="checkbox" id="opcoes-menu" class="opcoes__botao" />
+        <label for="opcoes-menu" class="opcoes__rotulo">
+          <li class="opcoes__item">Explorar Destinos</li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__titulo">Explorar Destinos</li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Aventura</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Cultura</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Praias</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Culinária</a>
+          </li>
+        </ul>
+
+        <li class="opcoes__item">
+          <a href="#" class="opcoes__link">Favoritos</a>
+        </li>
+        <li class="opcoes__item">
+          <a href="#" class="opcoes__link">Minha Rota</a>
+        </li>
+      </ul>
+
+      <div class="container">
+        <a href="#"
+          ><i class="fa-regular fa-heart container__imagem-transparente"></i
+        ></a>
+        <a href="#" class="container__link">
+          <i class="fa-solid fa-plane"></i>
+          <p class="container__texto">Minhas Viagens</p>
+        </a>
+        <a href="#" class="container__link">
+          <i class="fa-solid fa-user"></i>
+          <p class="container__texto">Meu perfil</p>
+        </a>
+      </div>
+    </header>
+    <section class="banner">
+      <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+      <p class="banner__texto">Encontre dicas para o seu destino!</p>
+      <input
+        type="search"
+        class="banner__pesquisa"
+        placeholder="Qual será sua próxima viagem?"
+      />
+    </section>
+
+    <section class="destino__principal">
+      <div class="destino__container">
+        <h2 class="destino__titulo">Grécia</h2>
+      </div>
+    </section>
+
+    <section class="carrossel">
+      <h2 class="carrossel__titulo">Principais Destinos</h2>
+      <!-- Slider main container -->
+      <div class="carrossel__container">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                src="img/athens.png"
+                alt="Imagem de Atenas"
+                onclick="changeContent(0)"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/mykonos.png"
+                alt="Imagem de Mykonos"
+                onclick="changeContent(1)"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/zakynthos.png"
+                alt="Imagem de zakynthos"
+                onclick="changeContent(5)"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/santorini.png"
+                alt="Imagem de Santorini"
+                onclick="changeContent(2)"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/rhodes.png"
+                alt="Imagem de Rhodes"
+                onclick="changeContent(3)"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/creta.png"
+                alt="Imagem de Creta"
+                onclick="changeContent(4)"
+              />
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
+          <div class="card__descricao">
+            <div class="descricao">
+              <h3 class="descricao__titulo" id="mainTitle">Atenas</h3>
+              <h2 class="descricao__titulo-destino" id="mainSubtitle">
+                O Berço da Civilização Ocidental
+              </h2>
+              <p class="descricao__texto" id="mainText">
+                Atenas, a cidade que testemunhou os alicerces da democracia e da
+                filosofia, é um fascinante encontro entre o antigo e o moderno.
+                A Acrópole domina o horizonte, enquanto as ruas de Plaka contam
+                histórias de séculos passados. Uma jornada única através da
+                história e cultura grega.
+              </p>
+            </div>
+            <img
+              src="img/athens.png"
+              class="descricao__imagem"
+              alt="imagem-atenas"
+              id="imagebox"
+            />
+          </div>
+          <div class="card__botoes">
+            <ul class="botoes">
+              <li class="botoes__item">
+                <i class="fa-regular fa-heart"></i>
+              </li>
+              <li class="botoes__item">
+                <i class="fa-solid fa-plane"></i>
+              </li>
+            </ul>
+            <a href="#" class="botoes__ancora">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="atracoes">
+      <h2 class="atracoes__titulo">Top Atrações</h2>
+      <div class="atracoes__main">
+        <div class="atracoes__imagens" id="atracoes">
+          <div class="atracoes__imagens-pequenas">
+            <img
+              src="./img/acropole.png"
+              alt="Acropole"
+              onclick="updateSecondaryContent(0)"
+            />
+            <img
+              src="./img/agoraAntiga.png"
+              alt="àgora-antiga"
+              onclick="updateSecondaryContent(1)"
+            />
+            <img
+              src="./img/plaka.png"
+              alt="Plaka"
+              onclick="updateSecondaryContent(2)"
+            />
+            <img
+              src="./img/museu-acropole.png"
+              alt="museu da acropole"
+              onclick="updateSecondaryContent(3)"
+            />
+          </div>
+
+          <div class="atracoes__imagens-grande">
+            <img src="./img/acropole.png" alt="" id="card-mainImage" />
+          </div>
+        </div>
+      </div>
+
+      <div class="atracoes__descricao">
+        <div class="descricao">
+          <h3 class="descricao__titulo" id="card-mainTitle">
+            Acrópole de Atenas
+          </h3>
+          <h2 class="descricao__titulo-destino" id="card-mainSubtitle">
+            Coração Histórico da Cidade
+          </h2>
+          <p class="descricao__texto" id="card-mainText">
+            Explore o coração histórico de Atenas subindo até a Acrópole, onde o
+            Partenon, o Erecteion e outros monumentos antigos oferecem uma vista
+            deslumbrante da cidade. Descubra a rica história e a arquitetura
+            espetacular desses locais emblemáticos.
+          </p>
+        </div>
+
+        <div class="card__botoes-atracoes">
+          <ul class="botoes">
+            <li class="botoes__item">
+              <i class="fa-regular fa-heart"></i>
+            </li>
+            <li class="botoes__item">
+              <i class="fa-solid fa-plane"></i>
+            </li>
+          </ul>
+          <a href="#" class="botoes__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="topicos">
+      <h2 class="topicos__titulo">Destinos visitados recentemente</h2>
+      <ul class="topicos__lista">
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Chile</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Brasil</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Australia</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Japão</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Filipinas</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Indonésia</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Vietnã</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Tailândia</a>
+        </li>
+      </ul>
+    </section>
+    <section class="contato">
+      <div class="contato__descricao">
+        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+        <p class="contato__texto">
+          Atualizações de dicas de destinos, custos e roteiros.
+        </p>
+      </div>
+      <input
+        type="email"
+        placeholder="Cadastre seu e-mail"
+        class="contato__email"
+      />
+    </section>
+    <hr />
+
+    <footer class="rodape">
+      <h2 class="rodape__titulo">Grupo ViagemExplora</h2>
+      <ul class="lista-rodape">
+        <li class="lista-rodape__titulo">Contato</li>
+        <li class="lista-rodape__item">
+          <i class="fa-brands fa-instagram"></i>
+          <a
+            href="https://instagram.com/f_trojan"
+            target="_blank"
+            class="lista-rodape__link"
+            >Instagram</a
+          >
+        </li>
+        <li class="lista-rodape__item">
+          <i class="fa-brands fa-linkedin"></i>
+          <a
+            href="https://linkedin.com/in/felipe-trojan-software-engineer"
+            target="_blank"
+            class="lista-rodape__link"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+      <div class="rodape__fim">
+        <p class="rodape__texto">Criado por <b>Felipe Trojan</b></p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

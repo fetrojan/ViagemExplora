@@ -1,0 +1,39 @@
+.destino__container {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/grecia.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 10vh;
+}
+
+.destino__titulo {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: var(--azul-claro);
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    text-shadow: 0 0 2rem rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (min-width: 1024px) {
+    .destino__container {
+        background-position: center -20vh;
+        background-size: cover;
+        height: 20vh;
+    }
+    .destino__titulo {
+        font-size: 38px;
+    }
+}
+
+@media screen and (min-width:1728px) {
+    .destino__container {
+        background-position: center -25vh;
+        background-size: cover;
+    }
+}
