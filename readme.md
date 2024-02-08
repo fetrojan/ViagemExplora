@@ -10,9 +10,7 @@ Esse projeto foi criado com a intenção de trazer o máximo de responsividade. 
 
 ## Preview Mobile
 
-<img src="/img/inicial-mobile.png">
-
-<img src="/img/secao_mobile.png">
+<img src="/img/inicial-mobile.png" style="width:30%"> <img src="/img/secao_mobile.png" style="width:30%">
 
 ## Ferramentas utilizadas:
 
