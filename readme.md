@@ -2,9 +2,17 @@
 
 Esse projeto foi criado com a intenção de trazer o máximo de responsividade. Para a criação foi utilizado o conceito de Mobile-First. Trata-se de um site para viajantes, o qual pode-se retirar dicas de atrações e montar o seu roteiro. Para a criação foi utilizado ferramentas da base de um desenvolvedor Front-End.
 
+## Preview Desktop
+
 <img src="/img/tela-inicial.png">
 
 <img src="/img/secao_inicio.png">
+
+## Preview Mobile
+
+<img src="/img/inicial-mobile.png">
+
+<img src="/img/secao_mobile.png">
 
 ## Ferramentas utilizadas:
 
